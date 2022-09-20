@@ -1,0 +1,16 @@
+name: nest_3.3
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - numpy
+  - scipy
+  - matplotlib
+  - jupyterlab
+  - cython
+  - cmake
+  - gcc_linux-64
+  - gxx_linux-64
+  - libtool
+  - gsl
