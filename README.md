@@ -10,7 +10,13 @@ Please make sure you have the latest releases (NEST 3.3 and NESTML 5.1.0) or the
 Note that in the tutorial we will not use NESTML, so its installation is optional. 
 
 ### Windows
-Use VM image provided [here](https://nest-simulator.readthedocs.io/en/v3.3/installation/livemedia.html#live-media).
+1. Use VM image provided [here](https://nest-simulator.readthedocs.io/en/v3.3/installation/livemedia.html#live-media).
+2. If you have access to the Ubuntu application on newer Windows versions, you may try installing NEST via the package manager:
+```shell
+sudo add-apt-repository ppa:nest-simulator/nest
+sudo apt-get update
+sudo apt-get install nest
+```
 
 ### Linux / macOS
 1. You can use the NEST Docker container as detailed [here](). We recommend using the **EBRAINS host**  instead of the Docker hub image linked in the documentation, as this contains the latest NESTML release:
@@ -22,6 +28,14 @@ docker pull docker-registry.ebrains.eu/nest/nest-simulator:3.3
 
     An alternative would be to [build and install NEST manually](https://nest-simulator.readthedocs.io/en/v3.3/installation/linux_install.html#linux-install)
 in the Conda environment (e.g., downloading the zip and install using Cmake), along with `pip install nestml`.  
+
+3. In Ubuntu, installation is also possible via the PPA repository:
+
+```shell
+sudo add-apt-repository ppa:nest-simulator/nest
+sudo apt-get update
+sudo apt-get install nest
+```
 
 For Linux and macOS, you can use the `nest_env_OS.yaml` configuration files to set up your environment some relevant packages. 
 
